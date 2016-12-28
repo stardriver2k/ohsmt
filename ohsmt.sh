@@ -25,7 +25,7 @@ tLen=${#fileArray[@]}
 # use for loop read all filenames and create .things and .items based on the existing scripts
 for (( i=0; i<${tLen}; i++ ));
 do
-  echo "Thing exec:command:${fileArray[$i]} [command=\"$DIRIN/${fileArray[$i]}.sh\", timeout=5]" >> $DIROUT/things/exec.things
+  echo "Thing exec:command:${fileArray[$i]} [command=\"$DIRIN/${fileArray[$i]}.sh\", timeout=5, interval=0]" >> $DIROUT/things/exec.things
   echo "Switch ${fileArray[$i]} "{"channel=\"exec:command:${fileArray[$i]}:run\""}""  >> $DIROUT/items/exec.items
 done
 
@@ -57,4 +57,3 @@ do
   echo "${fileArrayOFF[$i]}.postUpdate(OFF)"}"" >> $DIROUT/rules/exec.rules
   echo "end" >> $DIROUT/rules/exec.rules
 done
-
