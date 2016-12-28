@@ -12,8 +12,8 @@ Switch	Light_GF_Living_Couch	"Steckdose Sofa"	(GF_Living)	{ exec="OFF:/opt/brema
 In OH2.x, this isn´t possible anymore, if you want to use the new exec binding natively. Here you first have to create two things (one for ON, one for OFF if the don´t deliver its state), create items for those things and then link both things together to a pseudo-item. After that, you can create a rule to get the same result as in OH1.x. Sounds funny? It is not! 
 
 See the following threads to get a clearer view to the problem:
-https://community.openhab.org/t/exec-binding-do-not-work/17599/22
-https://community.openhab.org/t/question-about-exec-binding-in-oh2/18794/3
+https://community.openhab.org/t/exec-binding-do-not-work/17599/
+https://community.openhab.org/t/question-about-exec-binding-in-oh2/18794/
 
 Solution:
 ohsmt targets just this migration process from OH1.x to OH2.x where one would have to understand the thing-concept first, read thru many posts and discussions and then, eventually, gets its scripts back to work. Thats what i have done ;) But for YOU and all other regular users, i created ohsmt...
