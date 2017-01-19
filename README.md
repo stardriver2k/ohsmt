@@ -1,8 +1,8 @@
 # ohsmt
 openHab Script Migration Tool
 
-What does it? 
-ohsmt looks for linux shell-scripts (.sh) the are currently in use in any openHAB 1.x enviroment (and its exec binding) and creates new .things, .items and .rule-files for openHab 2.x within the default OH structure below $openhabhome/conf/. 
+Function:
+ohsmt looks for linux shell-scripts (.sh) that are currently in use in any openHAB 1.x enviroment (and its exec binding) and creates new .things, .items and .rule-files for openHab 2.x within the default OH structure below $openhabhome/conf/. 
 
 Why would one use this script?
 OH2.x use some elements in different ways then the previous version. One big thing is the new concept of things (see the openHab documentation for further details). The "old" exec binding allowed one to use some one stringer like this:
